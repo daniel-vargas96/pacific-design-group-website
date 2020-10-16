@@ -6,8 +6,8 @@ body, html {
 }
  body {
    display: table;
+   overflow: hidden;
 }
-
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
@@ -43,13 +43,29 @@ body, html {
   font-size: 56px;
 }
 
+.mobile-bg {
+  background-color: rgb(2, 10, 59);
+  color: rgb(255, 255, 255);
+}
+
 
 .nav-bar {
-  font-family: "Red Hat Display";
-  font-size: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  position: relative;
-  right: 5%;
+  font-family: "Red Hat Display" !important;
+  background-color: rgba(240, 248, 255, 0);
+}
+
+.nav-link:hover {
+  text-decoration: underline !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .title > h1 {
+    font-size: 56px;
+  }
+
+  .title > h3 {
+    font-size: 28px;
+  }
 }
