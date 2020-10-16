@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+ body {
+   display: table;
+   overflow: hidden;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+    height: 100%;
+    background: url("images/hero-bg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.title {
+  position: relative;
+  top: 40%;
+  text-align: center;
+  font-family: 'Red Hat Display';
+  justify-content: center;
+  align-items: center;
+}
+
+.title > h1 {
+  font-size: 96px;
+}
+
+.title > h3 {
+  font-size: 56px;
+}
+
+.mobile-bg {
+  background-color: rgb(2, 10, 59);
+  color: rgb(255, 255, 255);
+}
+
+
+.nav-bar {
+  font-family: "Red Hat Display" !important;
+  background-color: rgba(240, 248, 255, 0);
+}
+
+.nav-link:hover {
+  text-decoration: underline !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .title > h1 {
+    font-size: 56px;
+  }
+
+  .title > h3 {
+    font-size: 28px;
+  }
+}
