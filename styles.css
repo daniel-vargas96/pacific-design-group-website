@@ -6,7 +6,7 @@ body, html {
 }
  body {
    display: table;
-   overflow: hidden;
+   overflow-x: hidden;
 }
 
 .vertical-center {
@@ -17,13 +17,17 @@ body, html {
   align-items: center;
 }
 
-.hero {
+.hero, .about {
     height: 100%;
     background: url("images/hero-bg.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.about {
+  background: url("images/blueprint.jpg") no-repeat center center;
 }
 
 .title {
