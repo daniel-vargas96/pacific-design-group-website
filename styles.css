@@ -16,7 +16,7 @@ body, html {
   align-items: center;
 }
 
-.hero, .about {
+.hero, .about, .portfolio {
     height: 100%;
     background: url("images/hero-bg.jpg") no-repeat center center;
     -webkit-background-size: cover;
@@ -25,7 +25,7 @@ body, html {
     background-size: cover;
 }
 
-.about {
+.about, .portfolio {
   position: relative;
   background: url("images/blueprint.jpg") no-repeat center center;
 }
@@ -107,6 +107,22 @@ body, html {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+}
+
+.portfolio-image {
+  width: 500px;
+  height: 300px;
+  margin: 1rem;
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column {
+  display: flex;
+  flex: 50%;
 }
 
 @media screen and (max-width: 768px) {
