@@ -128,10 +128,27 @@ body, html {
 
 .cards {
   background-color: #fff;
-  opacity: .75;
+  opacity: 1;
+  padding-bottom: 2rem;
 }
 
 .cards:hover {
+  opacity: 1;
+}
+
+.overlay1 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.overlay1:hover {
   opacity: 1;
 }
 
