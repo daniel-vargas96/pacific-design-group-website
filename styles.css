@@ -160,4 +160,12 @@ body, html {
   .title > h3 {
     font-size: 28px;
   }
+
+  .nav-bg {
+    background-color: #343a40;
+  }
+
+  .nav-text {
+    color: white !important;
+  }
 }
