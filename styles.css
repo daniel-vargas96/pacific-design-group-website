@@ -152,6 +152,14 @@ body, html {
   opacity: 1;
 }
 
+.featured-projects {
+  background-color: #69706D;
+  color: white;
+  border-radius: 30px;
+}
+
+
+/* ***MOBILE VIEW*** */
 @media screen and (max-width: 768px) {
   .title > h1 {
     font-size: 56px;
