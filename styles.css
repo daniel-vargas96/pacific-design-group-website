@@ -7,6 +7,7 @@ body, html {
  body {
    display: table;
    overflow-x: hidden;
+   background-color: #343a40!important;
 }
 
 .vertical-center {
@@ -169,6 +170,15 @@ body, html {
   cursor: pointer;
 }
 
+.contact, .contact-wrapper__text > a {
+  color: white;
+}
+
+.map {
+  width: 400px;
+  height: 300px;
+}
+
 
 /* ***MOBILE VIEW*** */
 @media screen and (max-width: 768px) {
@@ -194,5 +204,9 @@ body, html {
 
   .projects-list {
     list-style-type: circle;
+  }
+
+  .map {
+    width: 100vw;
   }
 }

@@ -35,16 +35,19 @@
       <div class="collapse navbar-collapse flex-grow-1 text-right page-scroll" id="navbarResponsive">
         <ul class="navbar-nav ml-auto flex-nowrap">
           <li class="nav-item">
-            <a href="#home" class="nav-link m-2 menu-item nav-active color nav-text" data-toggle="collapse" data-target=".navbar-collapse.show">HOME</a>
+            <a href="#home" class="nav-link m-2 menu-item nav-active color nav-text" data-toggle="collapse"
+              data-target=".navbar-collapse.show">HOME</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link m-2 menu-item color nav-text" data-toggle="collapse" data-target=".navbar-collapse.show">ABOUT</a>
+            <a href="#about" class="nav-link m-2 menu-item color nav-text" data-toggle="collapse"
+              data-target=".navbar-collapse.show">ABOUT</a>
           </li>
           <li class="nav-item">
             <a href="pages/portfolio.html" class="nav-link m-2 menu-item color nav-text">PORTFOLIO</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link m-2 menu-item color nav-text" data-toggle="collapse" data-target=".navbar-collapse.show">CONTACT</a>
+            <a href="#contact" class="nav-link m-2 menu-item color nav-text" data-toggle="collapse"
+              data-target=".navbar-collapse.show">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -71,7 +74,7 @@
           <h1>About</h1>
         </div>
         <div class="content-container shadow">
-          <p class="about-content">
+          <p>
             Pacific Design Group is a broad-based design practice consisting of several design practices; master
             planning,
             High-Tech, Healthcare, Financial and Mixed-use. Each of these practices employ professionals with respective
@@ -105,30 +108,33 @@
   </div>
 
   <!-- **** Contact Section **** -->
-  <section id="contact">
-    <div class="container">
-      <div class="title pt-5">
-        <h1>Contact</h1>
-      </div>
-
-      <div class="contact-wrapper">
-        <p class="contact-wrapper__text">
-          T: <a href="tel:714-818-1632" class="contact-info">(714)-818-1632</a> <br>
-          E: <a href="mailto:dannyvargashb@gmail.com" class="contact-info" target="_blank">dannyvargashb@gmail.com</a>
-        </p>
-        <a target="_blank" class="cta-btn cta-btn--resume" href="mailto:dannyvargashb@gmail.com">Contact Me</a>
+  <div id="contact" class="contact d-flex justify-content-center">
+    <div class="contact-overlay">
+      <div class="container">
+        <div class="title pt-5">
+          <h1>Contact</h1>
+        </div>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">
+            For more information and/or to request a quote or support, please email us <a href="mailto:pdg@pdg-arch.com" class="contact-info" target="_blank">pdg@pdg-arch.com</a><br><br>
+            <b>Telephone</b>: <a href="tel:714-832-5100" class="contact-info">(714)-832-5100</a> <br>
+            <b>Email</b>: <a href="mailto:pdg@pdg-arch.com" class="contact-info" target="_blank">pdg@pdg-arch.com</a><br>
+            <b>Address</b>: 150 El Camino Real, Suite 112 Tustin, CA 92780:
+            <div id="map" class="map d-flex justify-content-center"></div>
+          </p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
   <!-- /END Contact Section -->
 
   <!-- **** Footer Section **** -->
-  <footer class="footer navbar-static-bottom">
+  <footer class="footer navbar-static-bottom contact">
     <div class="container">
       <a href="#top" class="back-to-top">
         <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
       </a>
-      <div class="social-links">
+      <!-- <div class="social-links">
         <a href="mailto:dannyvargashb@gmail.com" target="_blank">
           <i class="fa fa-envelope fa-inverse"></i>
         </a>
@@ -138,12 +144,9 @@
         <a href="https://github.com/daniel-vargas96" target="_blank">
           <i class="fa fa-github fa-inverse"></i>
         </a>
-      </div>
-
-      <hr />
-
-      <!-- If you give me some credit, will be huge for me :) -->
-      <p class="footer__text">
+      </div> -->
+      <hr style="border: 1px solid white;"/>
+      <p class="d-flex justify-content-center">
         © 2020 - All Rights Reserved to Daniel Vargas
       </p>
     </div>
@@ -159,6 +162,8 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ_1IOCtDuV3TzIB1EO3A7j1oEfAvrEEU&callback=initMap&libraries=&v=weekly"
+        defer></script>
   <script src="js/main.js"></script>
 </body>
 
