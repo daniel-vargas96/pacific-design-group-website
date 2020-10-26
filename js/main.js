@@ -20,3 +20,20 @@ $(function() {
   });
 })
 
+// ***SHOW MAP***
+// Initialize and add the map
+function initMap() {
+  const pdg = { lat: 33.744814, lng: -117.823655 };
+  // The map, centered at pdg
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: pdg,
+    disableDefaultUI: true,
+    gestureHandling: 'greedy'
+  });
+  // The marker, positioned at pdg
+  const marker = new google.maps.Marker({
+    position: pdg,
+    map: map,
+  });
+}
