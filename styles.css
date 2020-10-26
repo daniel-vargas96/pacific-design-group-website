@@ -37,6 +37,7 @@ body, html {
   font-family: 'Red Hat Display';
   justify-content: center;
   align-items: center;
+  margin-top: 4rem;
 }
 
 .title > h1 {
@@ -85,6 +86,7 @@ body, html {
   width: 100%;
   height: 100%;
   z-index: 3;
+  padding: 2rem;
 }
 
 .page-scroll {
@@ -158,6 +160,15 @@ body, html {
   border-radius: 30px;
 }
 
+.projects-list {
+  list-style-type: none;
+}
+
+.list-item:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
 
 /* ***MOBILE VIEW*** */
 @media screen and (max-width: 768px) {
@@ -175,5 +186,13 @@ body, html {
 
   .nav-text {
     color: white !important;
+  }
+
+  .content-container {
+    padding: 1rem;
+  }
+
+  .projects-list {
+    list-style-type: circle;
   }
 }
