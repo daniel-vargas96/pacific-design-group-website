@@ -25,13 +25,13 @@ body, html {
     background-size: cover;
 }
 
-.about, .portfolio {
+#about, #portfolio {
   position: relative;
   background: url("images/blueprint.jpg") no-repeat center center;
-      -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #contact, #footer {
@@ -225,6 +225,6 @@ body, html {
   }
 
   .map {
-    width: 100vw;
+    width: 100%;
   }
 }
