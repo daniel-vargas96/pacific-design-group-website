@@ -5,40 +5,37 @@ body, html {
     width: 100%;
 }
  body {
-   background: url("images/blueprint.jpg") center center;
-   background-size: cover;
-   background-attachment: fixed;
    display: table;
    overflow-x: hidden;
+       background: url("images/hero-bg.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
 
-.hero {
-    height: 100%;
+/* .hero {
     background: url("images/hero-bg.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+    background-attachment: fixed;
+} */
 
 #about {
-  display: flex;
   position: relative;
-  background: url("images/blueprint.jpg") center center;
-  height: 100%;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: -1;
+  height: 35%;
+  background-color: rgba(255, 255, 255, 0.503);
+  padding-top: 4rem;
 }
 
 #contact, #footer {
@@ -49,7 +46,6 @@ body, html {
 
 .title {
   position: relative;
-  top: 40%;
   text-align: center;
   font-family: 'Red Hat Display';
   justify-content: center;
@@ -130,15 +126,6 @@ body, html {
   color: black;
 }
 
-.about-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  z-index: 3;
-  background-color: white;
-  height: 100%;
-}
 
 .portfolio-image {
   width: 500px;
@@ -238,14 +225,8 @@ body, html {
     width: 100%;
   }
 
-  .overlay {
-  position: absolute; /* Sit on top of the page content */
-  top: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.755); /* Black background with opacity */
-  background-size: cover;
-  height: 1300px;
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
- }
-
+  #about {
+    height: 46%;
+    padding-top: 1rem;
+  }
 }
