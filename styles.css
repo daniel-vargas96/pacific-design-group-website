@@ -22,14 +22,24 @@ body, html {
   align-items: center;
 }
 
-/* .hero {
-    background: url("images/hero-bg.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-} */
+.hero {
+ position: relative;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: white;
+  font-weight: 400;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+  background: rgba(255, 255, 255, 0);
+}
 
 #about {
   position: relative;
@@ -192,6 +202,15 @@ body, html {
 .map {
   width: 400px;
   height: 300px;
+}
+
+#particles-js {
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: -1;
 }
 
 
